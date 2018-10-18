@@ -1,6 +1,7 @@
 function calcular(){	
 	var numero = document.getElementById("numero").value;
 	numero = numero * 3;
+<<<<<<< HEAD
 	alert("Número: "+numero);
 }
 
@@ -41,4 +42,12 @@ function zerar(){
 	numeros = "Números digitados:";
 	document.getElementById("conteudo").innerHTML="";
 	document.getElementById("processar").disabled = false; 
+=======
+	//alert("Número: "+numero);
+	document.getElementById("numero").value = numero;
+}
+
+function covarianciaDePearson(vecA, vecB){
+	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
+>>>>>>> be07528c02eb7e698f1cd8dc13e6321aabdc036d
 }
