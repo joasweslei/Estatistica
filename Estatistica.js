@@ -45,22 +45,6 @@ function zerar(){
 	document.getElementById("numero").value = numero;
 }
 
-function fat(num){
-	if(num == 1){
-		return 1;
-	}
-	else{
-		return num = num * fat(num - 1);
-	}
-}
-
-function fatorial(){
-	var numero = document.getElementById("numero").value;
-	var result = 0;
-	result = fat(numero);
-	document.getElementById("numero").value = result;
-}
-
 function covarianciaDePearson(vecA, vecB){
 	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
 }
