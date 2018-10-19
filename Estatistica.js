@@ -41,12 +41,26 @@ function zerar(){
 	numeros = "Números digitados:";
 	document.getElementById("conteudo").innerHTML="";
 	document.getElementById("processar").disabled = false; 
-=======
 	//alert("Número: "+numero);
 	document.getElementById("numero").value = numero;
 }
 
+function fat(num){
+	if(num == 1){
+		return 1;
+	}
+	else{
+		return num = num * fat(num - 1);
+	}
+}
+
+function fatorial(){
+	var numero = document.getElementById("numero").value;
+	var result = 0;
+	result = fat(numero);
+	document.getElementById("numero").value = result;
+}
+
 function covarianciaDePearson(vecA, vecB){
 	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
->>>>>>> be07528c02eb7e698f1cd8dc13e6321aabdc036d
 }
