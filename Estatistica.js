@@ -41,7 +41,6 @@ function zerar(){
 	numeros = "Números digitados:";
 	document.getElementById("conteudo").innerHTML="";
 	document.getElementById("processar").disabled = false; 
-	//alert("Número: "+numero);
 	document.getElementById("numero").value = numero;
 }
 
