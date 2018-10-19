@@ -46,4 +46,4 @@ function zerar(){
 
 function covarianciaDePearson(vecA, vecB){
 	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
-} //
+} 
