@@ -1,49 +1,14 @@
-function calcular(){	
-	var numero = document.getElementById("numero").value;
-	numero = numero * 3;
-	alert("Número: "+numero);
+
+
+function calcular(){
+    var nun;
+	var numero = document.getElementById("numero1").value;
+	var numero2 = document.getElementById("numero2").value;
+	var numero3 = document.getElementById("numero3").value;
+	//console.log(numero);
+	//console.log(numero2);
+	//console.log(numero3);
+	nun = numero*1 + numero2*1+ numero3*1 ;
+	//console.log(nun/3);
+	alert("a media dos numero e : "+ nun/3 );
 }
-
-var vetor = [];
-var numeros= "Números digitados:";
-
-function adicionar(){
-	var numero = document.getElementById("numero").value;
-	if(numero!=""){
-		document.getElementById("processar").disabled = true; 
-		numeros=numeros+" "+numero;
-		vetor.push(numero);
-		document.getElementById("numero").value=" ";
-		document.getElementById("conteudo").innerHTML=numeros;
-	}
-}
-
-
-function calcularmedia(){	
-	var media = vetor.reduce((total, valor) => total+valor/vetor.length, 0);
-	alert("Média: "+media);
-}
-
-function calcularvariancia(){
-	var media = vetor.reduce((total, valor) => total+valor/vetor.length, 0);
-	var variancia = vetor.reduce((total, valor) => total + Math.pow(media - valor, 2)/vetor.length, 0);
-	alert("Variância: "+variancia);
-}
-
-function calculardesvio(){
-	var media = vetor.reduce((total, valor) => total+valor/vetor.length, 0);
-	var variancia = vetor.reduce((total, valor) => total + Math.pow(media - valor, 2)/vetor.length, 0);
-	var desvioPadrao = Math.sqrt(variancia);
-	alert("Desvio Padrão: "+ desvioPadrao);
-}
-
-function zerar(){
-	numeros = "Números digitados:";
-	document.getElementById("conteudo").innerHTML="";
-	document.getElementById("processar").disabled = false; 
-	document.getElementById("numero").value = numero;
-}
-
-function covarianciaDePearson(vecA, vecB){
-	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
-} 
