@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+		<!-- Styles -->
+		<link rel=stylesheet href="Estilo.css" type="text/css"/>
+		         
+		<!-- scripts -->	
+		<script src="Estatisticas.js"></script>	
+
+		<!-- title of page -->
+		<title>Estatística</title>	
+	</head>
+	<body>
+		<div id='data'>
+		    <!-- Entrada de dados -->
+			<label for="numero">Número:</label>
+			<input type='text' id='numero' class='elem'/>
+			<label for="Peso">Peso:</label>
+			<input type='text' id='peso' class='elem'/>
+			<label id="conteudo"></label> <br>
+			<br><input class="botao" type='submit' id='adicionar' value='Adicionar' onclick='adicionar()'/> 
+			<input class="botao" type='submit' id='processar' value='Executar' onclick='calcular()'/>
+			<input class="botao" type='submit' id='medPond' value='Media Ponderada' onclick='pond()'/>			
+			<input class="botao" type='submit' id='media' value='Média' onclick='calcularmedia()'/> <br><br>
+			<input class="botao" type='submit' id='variancia' value='Variância' onclick='calcularvariancia()'/>
+			<input class="botao" type='submit' id='desvio' value='Desvio Padrão' onclick='calculardesvio()'/> 			
+			<input class="botao" type='submit' id='zerar' value='Zerar' onclick='zerar()'/> <br>
+		</div> <br>
+	</body>
+</html>
