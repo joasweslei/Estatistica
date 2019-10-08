@@ -76,3 +76,12 @@ function zerar(){
 function covarianciaDePearson(vecA, vecB){
 	return covariancia(vecA, vecB)/Math.sqrt(variancia(vecA),variancia(vecB));
 } 
+
+function somaVetor( vet ){
+	var i;
+	var soma = 0;
+	for(i = 0; i < vet.length; i++){
+		soma = soma + vet[i];
+	}
+	return soma;
+}
