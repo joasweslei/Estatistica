@@ -1,6 +1,7 @@
 ﻿/* ramom */
 /* Elias */
-/*VINICIUS */
+/*VINICIUS PETISTA */
+/*LINCOLN LULAO*/
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
