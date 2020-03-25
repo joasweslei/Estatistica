@@ -4,7 +4,7 @@ function calcular(){
 	alert("Atenção - Número: "+numero);
 }
 
-var vetor = [];
+	var vetor = [];
 var numeros = "";
 var ini = "Números digitados:";
 var vet = [];
