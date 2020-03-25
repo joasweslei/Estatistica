@@ -1,4 +1,5 @@
-/* ramom */
+﻿/* ramom */
+/* Elias */
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
