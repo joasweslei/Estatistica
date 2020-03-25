@@ -1,5 +1,6 @@
 ﻿/* ramom */
 /* Elias */
+/*VINICIUS */
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
