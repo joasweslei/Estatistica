@@ -2,6 +2,7 @@
 /* Elias */
 /*VINICIUS PETISTA */
 /*LINCOLN LULAO*/
+/*IGOR*/
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
@@ -89,4 +90,13 @@ function somaVetor( vet ){
 		soma = soma + vet[i];
 	}
 	return soma;
+}
+
+function dobroVetor( vet ){
+	var i;
+	var dobro = 2;
+	for(i = 0; i < vet.length; i++){
+		dobro = dobro * vet[i];
+	}
+	return dobro;
 }
