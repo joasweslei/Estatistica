@@ -4,6 +4,11 @@
 /*LINCOLN LULAO*/
 /*IGOR*/
 /*Jhonatan*/
+/* Diego */
+
+function somar(a, b) {
+  return a + b;
+}
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
