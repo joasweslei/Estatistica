@@ -3,6 +3,7 @@
 /*VINICIUS PETISTA */
 /*LINCOLN LULAO*/
 /*IGOR*/
+/*Jhonatan*/
 
 function calcular(){	
 	var numero = document.getElementById("numero").value;
@@ -100,3 +101,7 @@ function dobroVetor( vet ){
 	}
 	return dobro;
 }
+
+function divisao(a, b) {
+	return a / b;
+  }
